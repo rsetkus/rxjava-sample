@@ -2,3 +2,4 @@ build
 .gradle
 .idea
 rxjava2-sample.iml
+/.nb-gradle/
