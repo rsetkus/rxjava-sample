@@ -18,12 +18,12 @@ public class FlatMapVsMap {
         devs.add(new Person("Radu"));
         devs.add(new Person("Robertas"));
         devs.add(new Person("Oleg"));
-        devs.add(new Person("Nadezda"));
+        devs.add(new Person("Nadezhda"));
 
         List<Person> testers = new ArrayList<>();
         testers.add(new Person("Kyrstina"));
         testers.add(new Person("Iryna"));
-        testers.add(new Person("Nadezda no 2"));
+        testers.add(new Person("Nadezhda no 2"));
 
         return Observable.fromArray(devs, testers);
     }
