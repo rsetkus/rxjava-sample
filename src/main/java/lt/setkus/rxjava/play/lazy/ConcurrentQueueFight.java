@@ -23,7 +23,7 @@ public class ConcurrentQueueFight {
         // The Observer only wants EVEN numbers in the list
         IntStream.iterate(0, i -> i + 2)
                 .limit(50)
-                .forEach(theList::addLast);
+                .forEach(theList::add);
 
         System.out.println(">>> Starting size of the Queue: " + theList.size());
 
@@ -42,7 +42,6 @@ public class ConcurrentQueueFight {
         if (i % 2 == 0) {
             int oddNumber = i + 1;
             System.out.println("Eugh, received: " + i + " ...ANARCHY adding to list: " + oddNumber); // + " at pos:" + indexOfOddNo);
-            theList.addLast(oddNumber);
         } else {
             System.out.println("YES I love odd numbers, received " + i);
         }
