@@ -16,23 +16,25 @@ import java.util.stream.IntStream;
  * @author james
  */
 public class ConcurrentQueueFight {
-       Deque<Integer> theList = new LinkedBlockingDeque<>();
+
+    Deque<Integer> theQueue = new LinkedBlockingDeque<>();
 
     Observable<Integer> getNumberObservable() {
 
         // The Observer only wants EVEN numbers in the list
         IntStream.iterate(0, i -> i + 2)
                 .limit(50)
-                .forEach(theList::add);
+                .forEach(theQueue::add);
 
-        System.out.println(">>> Starting size of the Queue: " + theList.size());
+        System.out.println(">>> Starting size of the Queue: " + theQueue.size());
 
         return Observable.create(emitter -> {
-            for (int number : theList) {
+            while (!theQueue.isEmpty()) {
+                int number = theQueue.pop();
                 System.out.format("calling on next with: %d %s %n", number, (number % 2 != 0) ? "huh what's an odd nunber doing in here?" : "");
                 emitter.onNext(number);
             }
-            System.out.println(">>> Final size of the Queue: " + theList.size());
+            System.out.println(">>> Final size of the Queue: " + theQueue.size());
         });
     }
 
@@ -42,6 +44,7 @@ public class ConcurrentQueueFight {
         if (i % 2 == 0) {
             int oddNumber = i + 1;
             System.out.println("Eugh, received: " + i + " ...ANARCHY adding to list: " + oddNumber); // + " at pos:" + indexOfOddNo);
+            theQueue.addFirst(oddNumber);
         } else {
             System.out.println("YES I love odd numbers, received " + i);
         }
@@ -57,6 +60,10 @@ public class ConcurrentQueueFight {
 
     public static void main(String[] args) {
         new ConcurrentQueueFight().start();
+    }
+
+    void printQueue() {
+        System.out.println(theQueue);
     }
 
 }
