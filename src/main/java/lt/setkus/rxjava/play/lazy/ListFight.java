@@ -34,19 +34,9 @@ public class ListFight {
         });
     }
 
-    Observer<Integer> anarchyNumberObserver = new Observer<Integer>() {
-        Disposable disposable;
-
-        @Override
-        public void onSubscribe(Disposable dspsbl) {
-            this.disposable = dspsbl;
-        }
-
-        @Override
-        public void onNext(Integer i) {
+    Consumer<Integer> anarchyNumberObserver = (Integer i)  -> {
             // The observer takes even numbers, but it doesn't like it :'(
             // For every even number it receives it places an odd number back into the array for the Observable to emit!
-
             if (i % 2 == 0) {
                 int indexOfOddNo = theList.indexOf(i) + 1;
                 int oddNumber = i + 1;
@@ -55,18 +45,6 @@ public class ListFight {
             } else {
                 System.out.println("YES I love odd numbers, received " + i);
             }
-        }
-
-        @Override
-        public void onError(Throwable thrwbl) {
-            System.err.println(thrwbl);
-        }
-
-        @Override
-        public void onComplete() {
-            System.out.println("DONE!");
-        }
-
     };
 
     Consumer<Integer> happyNumberObserver = (i) -> System.out.println("received: " + i);
