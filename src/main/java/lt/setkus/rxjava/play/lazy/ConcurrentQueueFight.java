@@ -25,16 +25,14 @@ public class ConcurrentQueueFight {
                 .limit(50)
                 .forEach(theList::addLast);
 
-        System.out.println(">>> Starting size of the list: " + theList.size());
+        System.out.println(">>> Starting size of the Queue: " + theList.size());
 
         return Observable.create(emitter -> {
-            int index = 0;
-
             for (int number : theList) {
                 System.out.format("calling on next with: %d %s %n", number, (number % 2 != 0) ? "huh what's an odd nunber doing in here?" : "");
                 emitter.onNext(number);
             }
-            System.out.println(">>> Final size of the list: " + theList.size());
+            System.out.println(">>> Final size of the Queue: " + theList.size());
         });
     }
 
@@ -59,7 +57,7 @@ public class ConcurrentQueueFight {
     }
 
     public static void main(String[] args) {
-        new ListFight().start();
+        new ConcurrentQueueFight().start();
     }
 
 }
