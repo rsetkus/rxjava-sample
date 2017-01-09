@@ -2,6 +2,10 @@
 
 ## RxJava 2 resources
 
+### Official / Manual
+
+#### [RxJava 2 JavaDoc](http://reactivex.io/RxJava/javadoc/)
+
 ### General
 
 #### [Exploring RxJava 2 for Android by Jake Wharton](https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
