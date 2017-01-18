@@ -6,7 +6,10 @@
 package lt.setkus.rxjava.play;
 
 import io.reactivex.Observable;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.TreeSet;
 
 /**
  *
@@ -29,6 +32,12 @@ public class CollectIntoList {
                 .map((Integer i) -> (double) i / 2)
                 .toList()
                 .subscribe(list -> System.out.println(list));
+        
+        // Collecting into a different type
+        Observable.range(0, 50)
+                .map((Integer i) -> (double) i / 2)
+                .toList(() -> new HashSet<Double>())
+                .subscribe(set -> System.out.println(set));
                 
     }
 }
