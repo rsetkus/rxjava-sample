@@ -14,6 +14,8 @@
 
 #### [Migrating from RxJava 1.0 to RxJava 2.0 and Learn RxJava by Examples](https://blog.mindorks.com/migrating-from-rxjava1-to-rxjava2-5dac0a94b4aa#.gff0du7tj)
 
+#### [FragmentedPodcast with Jake Wharton on RxJava 2.0](http://fragmentedpodcast.com/episodes/053-jake-wharton-on-rxjava-2/?utm_source=androiddevdigest)
+
 ### Aspects of application
 
 #### [RxJava 2: Android MVVM Lifecycle App Structure with Retrofit 2](https://medium.com/@manuelvicnt/rxjava2-android-mvvm-lifecycle-app-structure-with-retrofit-2-cf903849f49e#.jbdlx1cx8)
