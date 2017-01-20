@@ -23,3 +23,5 @@
 ### Aspects of application
 
 #### [RxJava 2: Android MVVM Lifecycle App Structure with Retrofit 2](https://medium.com/@manuelvicnt/rxjava2-android-mvvm-lifecycle-app-structure-with-retrofit-2-cf903849f49e#.jbdlx1cx8)
+
+#### [Simple RxJava mistakes and how to avoid them](http://veskoiliev.com/simple-rx-mistakes-and-how-to-avoid-them/?utm_source=androiddevdigest)
