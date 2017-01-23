@@ -26,6 +26,13 @@
 
 #### [Simple RxJava mistakes and how to avoid them](http://veskoiliev.com/simple-rx-mistakes-and-how-to-avoid-them/?utm_source=androiddevdigest)
 
+#### [Who killed callbacks? the murder mystery resolution](http://www.pacoworks.com/2016/08/14/who-killed-callbacks-the-murder-mystery-resolution/)
+
+#### [This is not an Rx Tutorial](http://www.pacoworks.com/2016/08/21/this-is-not-an-rxjava-tutorial/)
+
+#### [Intro to Functional Reactive Programming](http://www.pacoworks.com/intro-to-frp/)
+
+#### [Fully Reactive Apps by Paco Estevez at Droidcon London 2016](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/)
 
 ### Reactive Libraries
 
