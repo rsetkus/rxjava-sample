@@ -16,13 +16,11 @@ public class ScheduleOnVsObserveOn {
 
 
     Observable<Integer> getRandyNumbersObservable() {
-        return Observable.generate(emitter -> {
-            while (true) {
+        return Observable.generate(emitter -> {  
                 int randomNo = ThreadLocalRandom.current().nextInt(0, 501);
                 log("generating number..." + randomNo);
                 emitter.onNext(randomNo);
                 Thread.sleep(2000);
-            }
         });
     }
 
