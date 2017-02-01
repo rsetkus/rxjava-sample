@@ -34,7 +34,13 @@
 
 #### [Fully Reactive Apps by Paco Estevez at Droidcon London 2016](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/)
 
-##### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
+### Migrating from Imperative to Reactive paradigm
+
+#### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
+
+#### [Glass of RxJava](https://medium.com/@tatocaster/glass-of-rxjava-80b2f9000c49#.8qzlnil0h)
+
+#### [Grokking RxJava. Part 1 and following](http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/)
 
 ### Reactive Libraries
 
