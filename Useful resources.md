@@ -34,6 +34,8 @@
 
 #### [Fully Reactive Apps by Paco Estevez at Droidcon London 2016](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/)
 
+##### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
+
 ### Reactive Libraries
 
 #### [Reptar. Roaring RxJava](https://github.com/Commit451/Reptar?utm_source=Android+Weekly&utm_campaign=8ab4301908-AndroidWeekly_241&utm_medium=email&utm_term=0_4eb677ad19-8ab4301908-337946117)
