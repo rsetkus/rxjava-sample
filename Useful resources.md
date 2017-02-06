@@ -48,6 +48,8 @@
 
 #### [The Reactive Revolution: RxAndroid and how it finally clicked for me (part 2 of 2)](https://medium.com/@carl.whalley/the-reactive-revolution-rxandroid-and-how-it-finally-clicked-for-me-part-2-of-2-bafefeac9c33#.cqrjy5nfc)
 
+#### [Reactive Frustrations](https://upday.github.io/blog/reactive_frustrations_1/?utm_source=Android+Weekly&utm_campaign=309f4188e7-Android_Weekly_229&utm_medium=email&utm_term=0_4eb677ad19-309f4188e7-337946117)
+
 ### Reactive Libraries
 
 #### [Reptar. Roaring RxJava](https://github.com/Commit451/Reptar?utm_source=Android+Weekly&utm_campaign=8ab4301908-AndroidWeekly_241&utm_medium=email&utm_term=0_4eb677ad19-8ab4301908-337946117)
