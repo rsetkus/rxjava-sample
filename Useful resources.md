@@ -50,6 +50,8 @@
 
 #### [Reactive Frustrations](https://upday.github.io/blog/reactive_frustrations_1/?utm_source=Android+Weekly&utm_campaign=309f4188e7-Android_Weekly_229&utm_medium=email&utm_term=0_4eb677ad19-309f4188e7-337946117)
 
+#### [Practical challenges for RxJava learners](https://medium.com/@sergii/practical-challenges-for-rxjava-learners-1821c454de9#.szyb9vpj1)
+
 ### Reactive Libraries
 
 #### [Reptar. Roaring RxJava](https://github.com/Commit451/Reptar?utm_source=Android+Weekly&utm_campaign=8ab4301908-AndroidWeekly_241&utm_medium=email&utm_term=0_4eb677ad19-8ab4301908-337946117)
