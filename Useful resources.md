@@ -36,6 +36,8 @@
 
 #### [RxJava's repeatWhen and retryWhen, explained](http://blog.danlew.net/2016/01/25/rxjavas-repeatwhen-and-retrywhen-explained/?utm_source=Android+Weekly&utm_campaign=ef86743f54-Android_Weekly_190&utm_medium=email&utm_term=0_4eb677ad19-ef86743f54-337946117)
 
+#### [Testing RxJava2](https://www.infoq.com/articles/Testing-RxJava2)
+
 ### Migrating from Imperative to Reactive paradigm
 
 #### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
