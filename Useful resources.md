@@ -56,6 +56,8 @@
 
 ### Reactive Libraries
 
+#### [RxLint - set of lint checks that check your RxJava code](https://bitbucket.org/littlerobots/rxlint)
+
 #### [Reptar. Roaring RxJava](https://github.com/Commit451/Reptar?utm_source=Android+Weekly&utm_campaign=8ab4301908-AndroidWeekly_241&utm_medium=email&utm_term=0_4eb677ad19-8ab4301908-337946117)
 
 #### [RxAnimations - animations Rx wrapper](https://github.com/0ximDigital/RxAnimations)
