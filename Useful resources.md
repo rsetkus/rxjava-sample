@@ -10,6 +10,8 @@
 
 #### [Exploring RxJava 2 for Android by Jake Wharton](https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
 
+#### [RxJava 2 – A Quick Introduction](https://caster.io/lessons/rxjava-2-quick-introduction/)
+
 ### Migrating from RxJava 1
 
 #### [The Next Step for Reactive Android Programming](http://futurice.com/blog/the-next-step-for-reactive-android-programming?utm_source=Android+Weekly&utm_campaign=454d4b53e2-Android_Weekly_239&utm_medium=email&utm_term=0_4eb677ad19-454d4b53e2-337946117)
@@ -54,6 +56,8 @@
 
 #### [Practical challenges for RxJava learners](https://medium.com/@sergii/practical-challenges-for-rxjava-learners-1821c454de9#.szyb9vpj1)
 
+#### [The RxJava Repository Pattern](https://www.bignerdranch.com/blog/the-rxjava-repository-pattern/)
+
 ### Reactive Libraries
 
 #### [RxLint - set of lint checks that check your RxJava code](https://bitbucket.org/littlerobots/rxlint)
@@ -81,3 +85,5 @@
 #### [RxReplayingShare - An RxJava 2 transformer which combines replay(1), publish(), and refCount() operators](https://github.com/JakeWharton/RxReplayingShare)
 
 #### [RxPermissions - Android runtime permissions powered by RxJava](https://github.com/tbruyelle/RxPermissions)
+
+#### [RxActivityResult - This is a library that can help you to receive results from startActivityForResult() as an Observable](https://github.com/nekocode/RxActivityResult)
