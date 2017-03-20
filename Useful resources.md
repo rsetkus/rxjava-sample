@@ -24,6 +24,10 @@
 
 ### Aspects of application
 
+#### [Clearer RxJava intentions with Single and Completable](https://medium.com/@ValCanBuild/making-your-rxjava-intentions-clearer-with-single-and-completable-f064d98d53a8#.6v7ridipg)
+
+#### [The RxJava Repository Pattern](https://www.bignerdranch.com/blog/the-rxjava-repository-pattern/)
+
 #### [RxJava 2: Android MVVM Lifecycle App Structure with Retrofit 2](https://medium.com/@manuelvicnt/rxjava2-android-mvvm-lifecycle-app-structure-with-retrofit-2-cf903849f49e#.jbdlx1cx8)
 
 #### [Simple RxJava mistakes and how to avoid them](http://veskoiliev.com/simple-rx-mistakes-and-how-to-avoid-them/?utm_source=androiddevdigest)
@@ -55,8 +59,6 @@
 #### [Reactive Frustrations](https://upday.github.io/blog/reactive_frustrations_1/?utm_source=Android+Weekly&utm_campaign=309f4188e7-Android_Weekly_229&utm_medium=email&utm_term=0_4eb677ad19-309f4188e7-337946117)
 
 #### [Practical challenges for RxJava learners](https://medium.com/@sergii/practical-challenges-for-rxjava-learners-1821c454de9#.szyb9vpj1)
-
-#### [The RxJava Repository Pattern](https://www.bignerdranch.com/blog/the-rxjava-repository-pattern/)
 
 ### Reactive Libraries
 
