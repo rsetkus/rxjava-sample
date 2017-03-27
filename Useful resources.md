@@ -44,6 +44,8 @@
 
 #### [Testing RxJava2](https://www.infoq.com/articles/Testing-RxJava2)
 
+#### [RxJava 2 Disposable — Under the hood](https://medium.com/@vanniktech/rxjava-2-disposable-under-the-hood-f842d2373e64)
+
 ### Migrating from Imperative to Reactive paradigm
 
 #### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
