@@ -10,6 +10,25 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
+ * https://twitter.com/JakeWharton/status/850039445411725316
+ *
+ * This is a really good test of whether your mental model for Rx is correct.
+ *
+ * It's simple: subscribe() goes up, observing down, unsubscribe up.
+ *
+ *  disposable = observable
+ *              .doOnSubscribe( // io  )
+ *              .subscribeOn(io())
+ *              .unsubscribeOn(io())
+ *              .doFinally( // io )
+ *              .doOnSubscribe( // main )
+ *              .subscribeOn(mainThread())
+ *              .unsubscribeOn(mainThread())
+ *              .observeOn(mainThread())
+ *              .doFinally( // main )
+ *              .subscribe();
+ *
+ *  disposable.dispose();
  *
  * @author James
  */
@@ -36,6 +55,8 @@ public class ScheduleOnVsObserverOn {
 
     public static void main(String[] args) {
         new ScheduleOnVsObserverOn().run();
+
+        Observable observable =null;
     }
 
     public void run() {
@@ -45,7 +66,7 @@ public class ScheduleOnVsObserverOn {
                 .subscribeOn(newScheduler("subscribeOn-"))
                 .observeOn(newScheduler("observerOn-")) // placement matters, if before the filter, the filter is done on the observerOn scheduler
                 .filter(num -> {
-                    log("filtering, is " + num + " a prime number?"); 
+                    log("filtering, is " + num + " a prime number?");
                     boolean prime = true;
                     for (int i = 2; i < num; i++) {
                         if (num % i == 0) {
