@@ -10,6 +10,8 @@
 
 #### [Exploring RxJava 2 for Android by Jake Wharton](https://realm.io/news/gotocph-jake-wharton-exploring-rxjava2-android/)
 
+#### [RxJava 2 – A Quick Introduction](https://caster.io/lessons/rxjava-2-quick-introduction/)
+
 ### Migrating from RxJava 1
 
 #### [The Next Step for Reactive Android Programming](http://futurice.com/blog/the-next-step-for-reactive-android-programming?utm_source=Android+Weekly&utm_campaign=454d4b53e2-Android_Weekly_239&utm_medium=email&utm_term=0_4eb677ad19-454d4b53e2-337946117)
@@ -21,6 +23,10 @@
 #### [FragmentedPodcast with Jake Wharton on RxJava 2.0](http://fragmentedpodcast.com/episodes/053-jake-wharton-on-rxjava-2/?utm_source=androiddevdigest)
 
 ### Aspects of application
+
+#### [Clearer RxJava intentions with Single and Completable](https://medium.com/@ValCanBuild/making-your-rxjava-intentions-clearer-with-single-and-completable-f064d98d53a8#.6v7ridipg)
+
+#### [The RxJava Repository Pattern](https://www.bignerdranch.com/blog/the-rxjava-repository-pattern/)
 
 #### [RxJava 2: Android MVVM Lifecycle App Structure with Retrofit 2](https://medium.com/@manuelvicnt/rxjava2-android-mvvm-lifecycle-app-structure-with-retrofit-2-cf903849f49e#.jbdlx1cx8)
 
@@ -34,7 +40,31 @@
 
 #### [Fully Reactive Apps by Paco Estevez at Droidcon London 2016](http://www.pacoworks.com/2016/11/02/fully-reactive-apps-at-droidcon-uk-2016-2/)
 
+#### [RxJava's repeatWhen and retryWhen, explained](http://blog.danlew.net/2016/01/25/rxjavas-repeatwhen-and-retrywhen-explained/?utm_source=Android+Weekly&utm_campaign=ef86743f54-Android_Weekly_190&utm_medium=email&utm_term=0_4eb677ad19-ef86743f54-337946117)
+
+#### [Testing RxJava2](https://www.infoq.com/articles/Testing-RxJava2)
+
+#### [RxJava 2 Disposable — Under the hood](https://medium.com/@vanniktech/rxjava-2-disposable-under-the-hood-f842d2373e64)
+
+### Migrating from Imperative to Reactive paradigm
+
+#### [RxRecipes: Wrap your way to Rx](https://hackernoon.com/rxrecipes-wrap-your-way-to-rx-fd40eb5254b6#.cs2zy0vxh)
+
+#### [Glass of RxJava](https://medium.com/@tatocaster/glass-of-rxjava-80b2f9000c49#.8qzlnil0h)
+
+#### [Grokking RxJava. Part 1 and following](http://blog.danlew.net/2014/09/15/grokking-rxjava-part-1/)
+
+#### [The Reactive Revolution: RxAndroid and how it finally clicked for me (part 1 of 2)](https://medium.com/@carl.whalley/the-reactive-revolution-rxandroid-and-how-it-finally-clicked-for-me-part-1-of-2-a35122a6091e#.v6zvg2ck2)
+
+#### [The Reactive Revolution: RxAndroid and how it finally clicked for me (part 2 of 2)](https://medium.com/@carl.whalley/the-reactive-revolution-rxandroid-and-how-it-finally-clicked-for-me-part-2-of-2-bafefeac9c33#.cqrjy5nfc)
+
+#### [Reactive Frustrations](https://upday.github.io/blog/reactive_frustrations_1/?utm_source=Android+Weekly&utm_campaign=309f4188e7-Android_Weekly_229&utm_medium=email&utm_term=0_4eb677ad19-309f4188e7-337946117)
+
+#### [Practical challenges for RxJava learners](https://medium.com/@sergii/practical-challenges-for-rxjava-learners-1821c454de9#.szyb9vpj1)
+
 ### Reactive Libraries
+
+#### [RxLint - set of lint checks that check your RxJava code](https://bitbucket.org/littlerobots/rxlint)
 
 #### [Reptar. Roaring RxJava](https://github.com/Commit451/Reptar?utm_source=Android+Weekly&utm_campaign=8ab4301908-AndroidWeekly_241&utm_medium=email&utm_term=0_4eb677ad19-8ab4301908-337946117)
 
@@ -59,3 +89,5 @@
 #### [RxReplayingShare - An RxJava 2 transformer which combines replay(1), publish(), and refCount() operators](https://github.com/JakeWharton/RxReplayingShare)
 
 #### [RxPermissions - Android runtime permissions powered by RxJava](https://github.com/tbruyelle/RxPermissions)
+
+#### [RxActivityResult - This is a library that can help you to receive results from startActivityForResult() as an Observable](https://github.com/nekocode/RxActivityResult)

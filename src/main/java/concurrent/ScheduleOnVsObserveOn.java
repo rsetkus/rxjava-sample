@@ -1,4 +1,4 @@
-package otherthreads;
+package concurrent;
 
 import io.reactivex.Observable;
 import io.reactivex.Scheduler;
@@ -6,7 +6,6 @@ import io.reactivex.schedulers.Schedulers;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -32,41 +31,53 @@ import java.util.concurrent.atomic.AtomicInteger;
  *
  * @author James
  */
-public class ScheduleOnVsObserverOn {
+public class ScheduleOnVsObserveOn {
 
-    AtomicBoolean generateNumbers = new AtomicBoolean(true);
-    ThreadFactory observerOnThreadFactory = new SimpleThreadFactory("observerOn-");
-    ThreadFactory subscribeOnThreadFactory = new SimpleThreadFactory("subscribeOn-");
 
     Observable<Integer> getRandyNumbersObservable() {
-        return Observable.create(emitter -> {
-            while (generateNumbers.get()) {
-
-                ThreadLocalRandom randomGenerator = ThreadLocalRandom.current();
-                Integer randomNo = randomGenerator.nextInt(0, 501);
+        return Observable.generate(emitter -> {  
+                int randomNo = ThreadLocalRandom.current().nextInt(0, 501);
                 log("generating number..." + randomNo);
                 emitter.onNext(randomNo);
-
-                log("sleeping... zzz");
                 Thread.sleep(2000);
-            }
         });
     }
 
     public static void main(String[] args) {
-        new ScheduleOnVsObserverOn().run();
-
-        Observable observable =null;
+        new ScheduleOnVsObserveOn().run();
     }
 
     public void run() {
         log("Starting up!");
 
         getRandyNumbersObservable()
-                .subscribeOn(newScheduler("subscribeOn-"))
-                .observeOn(newScheduler("observerOn-")) // placement matters, if before the filter, the filter is done on the observerOn scheduler
+                .map(i -> {
+                    log("map 1...");
+                    return i;
+                })
+                .subscribeOn(newScheduler("subscribeOn-")) // subscribeOn placement in pipeline does not matter... subscribeOn = where source elements are omitted from.
+                .map(i -> {
+                    log("map 2...");
+                    return i;
+                })
+                .observeOn(newScheduler("observerOn-1-"))
+                .map(i -> {
+                    log("map 3...");
+                    return i;
+                })
+                .observeOn(newScheduler("observerOn-2-"))
+                .map(i -> {
+                    log("map 4...");
+                    return i;
+                })
+                .map(i -> {
+                    log("map 5...");
+                    return i;
+                })
+                .observeOn(newScheduler("observerOn-3-")) // placement matters, all functions and downstream consumers will run on this scheduler (unless changed) 
                 .filter(num -> {
                     log("filtering, is " + num + " a prime number?");
+
                     boolean prime = true;
                     for (int i = 2; i < num; i++) {
                         if (num % i == 0) {
@@ -74,7 +85,7 @@ public class ScheduleOnVsObserverOn {
                             break;
                         }
                     }
-                    log("filter complete - is number prime? " + prime);
+                    log("filter - is number prime? " + prime);
                     return prime;
                 })
                 .subscribe(num -> log("Subscriber has got: " + num));
