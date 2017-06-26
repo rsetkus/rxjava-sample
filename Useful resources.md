@@ -22,6 +22,10 @@
 
 #### [FragmentedPodcast with Jake Wharton on RxJava 2.0](http://fragmentedpodcast.com/episodes/053-jake-wharton-on-rxjava-2/?utm_source=androiddevdigest)
 
+#### [RxJava 1 -> RxJava 2 (Understanding the Changes)](http://blog.kaush.co/2017/06/21/rxjava1-rxjava2-migration-understanding-changes/)
+
+#### [RxJava 1 -> RxJava 2 (Disposing subscriptions)](http://blog.kaush.co/2017/06/21/rxjava-1-rxjava-2-disposing-subscriptions/)
+
 ### Aspects of application
 
 #### [Clearer RxJava intentions with Single and Completable](https://medium.com/@ValCanBuild/making-your-rxjava-intentions-clearer-with-single-and-completable-f064d98d53a8#.6v7ridipg)
