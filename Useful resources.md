@@ -99,3 +99,5 @@
 #### [RxPermissions - Android runtime permissions powered by RxJava](https://github.com/tbruyelle/RxPermissions)
 
 #### [RxActivityResult - This is a library that can help you to receive results from startActivityForResult() as an Observable](https://github.com/nekocode/RxActivityResult)
+
+#### [RxIdler - An IdlingResource for Espresso & RxJava](https://github.com/square/RxIdler)
