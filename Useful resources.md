@@ -12,6 +12,8 @@
 
 #### [RxJava 2 – A Quick Introduction](https://caster.io/lessons/rxjava-2-quick-introduction/)
 
+#### [RxJava cheat sheet, with a pinch of Android](https://zeroturnaround.com/rebellabs/rxjava-cheat-sheet-with-a-pinch-of-android/)
+
 ### Migrating from RxJava 1
 
 #### [The Next Step for Reactive Android Programming](http://futurice.com/blog/the-next-step-for-reactive-android-programming?utm_source=Android+Weekly&utm_campaign=454d4b53e2-Android_Weekly_239&utm_medium=email&utm_term=0_4eb677ad19-454d4b53e2-337946117)
