@@ -101,3 +101,5 @@
 #### [RxActivityResult - This is a library that can help you to receive results from startActivityForResult() as an Observable](https://github.com/nekocode/RxActivityResult)
 
 #### [RxIdler - An IdlingResource for Espresso & RxJava](https://github.com/square/RxIdler)
+
+#### [android-disposebag - Automatically dispose RxJava 2 streams on Android using Lifecycle events.](https://github.com/kizitonwose/android-disposebag)
